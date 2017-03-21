@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #414141">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>导播台</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link href="css/mybase.css" rel="stylesheet"/>
+    <link href="css/director.css" rel="stylesheet"/>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/director.js"></script>
+</head>
+<body style="height: 100%">
+    <div class="director-head">
+        <div class="max-width clearfix" style="background: #333333;">
+            <a class="dir-index"><img src="images/direct-one-01.png"></a>
+            <div class="fr">
+                <a class="director-land rel erweimasmall">
+                    <img src="images/director-07.png" class="mar-bot">
+                    扫码登入
+                    <div class="direct-three-erweimasmall">
+                        <div class="arrow-up2"></div>
+                        <img src="images/director-02.jpg" class="director-02">
+                        <p class="direct-three-erweimasmall-zi">扫描二维码进入</p>
+                    </div>
+                </a>
+                <a class="director-land subtitle-block">
+                    <img src="images/director-08.png" class="mar-bot">
+                    设置
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="director-index">
+        <div class="max-width"  style="background: #414141;">
+            <div class="director-preview">
+                <div class="preview-size">
+                    <div class="rel preview-size-img-c1 preview-size-img-border" style="box-sizing: border-box;height: 360px">
+                        <span class="selected-time abs dis-noe">16:00:00</span>
+                        <img src="images/direct-smal-img-01.jpg" class="preview-size-img">
+                        <img src="images/direct-smal-img-01.jpg" class="figure figure-border">
+                        <img src="images/direct-smal-img-01.jpg" class="figure-two figure-two-top">
+                        <img src="images/direct-smal-img-01.jpg" class="figure-two figure-two-bottom">
+                        <img src="images/direct-smal-img-01.jpg" class="figure-three figure-two-left">
+                    </div>
+                    <div class="function clearfix">
+                        <span class="span-mid">预览窗口</span>
+                        <span class="fr span-mid">
+                            <a class="kuan-gong kuan-gong-active">
+                                <i class="iconfont icon-one "></i>
+                            </a>
+                            <a class="kuan-gong">
+                                <i class="iconfont icon-two"></i>
+                            </a>
+                            <a class="kuan-gong">
+                                <i class="iconfont icon-three"></i>
+                            </a>
+                             <a class="kuan-gong">
+                                 <i class="iconfont icon-four"></i>
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="director-switch">
+                <div class="switch">
+                    <a class="click">
+                        <img src="images/director-14.png">
+                        <p>切换</p>
+                    </a>
+                </div>
+                <span class="select-change">
+                    <select class="select">
+                        <option class="option">硬切</option>
+                        <option>软切</option>
+                        <option>软切</option>
+                    </select>
+                </span>
+
+            </div>
+            <div class="director-preview">
+                <div class="preview-size">
+                    <div class="rel preview-size-img-c2 preview-size-img-border" style="box-sizing: border-box;height: 360px">
+                        <img src="images/direct-smal-img-01.jpg" class="preview-size-img">
+                        <div class="abs progress">
+                            <i class="gong left"></i>
+                            <i class="gong right"></i>
+                            <a class="voice"><img src="images/director-09.png"/></a>
+                        </div>
+                    </div>
+
+                    <div class="function2 clearfix">
+                        <span class="span-mid2">直播窗口</span>
+                        <span class="fr span-mid2">
+                            <a class="start">开始直播</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="toggle">
+                <a class="toggle-gong active">视频</a>
+                <a class="toggle-gong">字幕</a>
+                <a class="toggle-gong">图片</a>
+                <a class="toggle-gong">组件</a>
+                <a class="toggle-gong">特效</a>
+            </div>
+        </div>
+        <div class="block-1 max-width-one pad-bg clearfix">
+            <div style="display: inline-block">
+                <div class="small-seeding fl">
+                    <div class="rel bg-color">
+                        <div class="abs preview-size-img-c2 border-all"></div>
+                        <span class="sort">1</span>
+                        <img src="images/direct-smal-img-01.jpg" class="small-seeding-img">
+                        <div class="abs progress scole">
+                            <i class="gong left"></i>
+                            <i class="gong right"></i>
+                            <a class="voice"><img src="images/director-09.png"></a>
+                        </div>
+                        <a class="drag-seeding-small-close" style="padding-bottom: 5px ;right: 4px;top: 4px"><img src="images/close-end.png" width="12"></a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fl line-v">
+                            <img src="images/director-11.png">
+                        </a>
+                        <a class="fl line-v">
+                            &nbsp; &nbsp;
+                            <img src="images/director-12.png">
+                        </a>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color">
+                        <div class="abs border-all"></div>
+                        <span class="sort">2</span>
+                        <img src="images/direct-smal-img-02.jpg" class="small-seeding-img ">
+                        <div class="abs progress scole">
+                            <i class="gong left"></i>
+                            <i class="gong right"></i>
+                            <a class="voice"><img src="images/director-09.png"></a>
+                        </div>
+                        <a class="drag-seeding-small-close" style="padding-bottom: 5px;right: 4px;top: 4px"><img src="images/close-end.png" width="12"></a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fl line-v">
+                            <img src="images/director-11.png">
+                        </a>
+                        <a class="fl line-v">
+                            &nbsp; &nbsp;
+                            <img src="images/director-12.png">
+                        </a>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">3</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">4</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">5</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">6</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">7</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl">
+                    <div class="rel bg-color border-seeding">
+                        <div class="abs border-all"></div>
+                        <span class="sort">8</span>
+                        <a class="add">
+                            <img src="images/director-06.png" class="add-img">
+                        </a>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pad-bot">
+                <img src="images/director-10.png" class="director-10">
+                <span class="f-18px co99">拖动视频到预览窗口/直播窗口  快捷切换</span>
+            </div>
+        </div>
+        <div class="block-1 max-width pad-bg1 clearfix" style="height: 482px">
+            <div class="drag co99 f-18px clearfix">
+                <span>拖动字幕到预览窗口</span>
+            </div>
+            <a class="drag co99 f-18px clearfix drag-block">
+                <i class="drag-seeding-bal2"></i>
+                <span>拖动字幕到预览窗口</span>
+            </a>
+        </div>
+        <div class="block-1 max-width pad-bg1 clearfix">
+            <div class="drag co99 f-18px clearfix">
+                <span>拖动图片到预览窗口</span>
+                <a class="add-sedding fr">
+                    <img src="images/director-04.png" class="director-04">
+                </a>
+            </div>
+            <div class="drag-seeding clearfix" style="font-size: 0">
+                <div class="drag-seeding-small drag-seeding-small-active">
+                    <div class="drag-seeding-small-img rel">
+                        <img src="images/direct-smal-img-03.jpg" class="img">
+                        <a class="drag-seeding-small-close"><img src="images/director-05.png"></a>
+                    </div>
+                    <div class="drag-seeding-but clearfix">
+                        <i class="drag-seeding-ball active"></i>
+                        <a class="fr drag-seeding-add"><img src="images/director-04.png" class="img"></a>
+                    </div>
+                </div>
+                <div class="drag-seeding-small drag-seeding-small-active">
+                    <div class="drag-seeding-small-img rel">
+                        <img src="images/direct-smal-img-02.jpg" class="img">
+                        <a class="drag-seeding-small-close"><img src="images/director-05.png"></a>
+                    </div>
+                    <div class="drag-seeding-but clearfix">
+                        <i class="drag-seeding-ball active"></i>
+                        <a class="fr drag-seeding-add"><img src="images/director-04.png" class="img"></a>
+                    </div>
+                </div>
+                <div class="drag-seeding-small drag-seeding-small-active">
+                    <div class="drag-seeding-small-img rel">
+                        <img src="images/direct-smal-img-01.jpg" class="img">
+                        <a class="drag-seeding-small-close"><img src="images/director-05.png"></a>
+                    </div>
+                    <div class="drag-seeding-but clearfix">
+                        <i class="drag-seeding-ball active"></i>
+                        <a class="fr drag-seeding-add"><img src="images/director-04.png" class="img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-1 max-width pad-bg1 clearfix">
+            <div class="drag co99 f-18px clearfix">
+                <span>拖动组件到预览窗口</span>
+                <a class="add-sedding fr">
+                    <img src="images/director-04.png" class="director-04">
+                </a>
+            </div>
+            <div class="drag-seeding clearfix" style="font-size: 0">
+                <div class="drag-seeding-small">
+                    <div class="drag-seeding-small-img rel selected">
+                        <span class="time">16:00:00</span>
+                        <a class="drag-seeding-small-close"><img src="images/director-05.png"></a>
+                    </div>
+                    <div class="drag-seeding-but clearfix">
+                        <i class="drag-seeding-ball"></i>
+                        <a class="fr drag-seeding-add"><img src="images/director-04.png" class="img"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="block-1 max-width pad-bg1 clearfix">
+            <div class="effect f-18px co99">
+                <div class="sound d-flex">
+                    <p>音效</p>
+                    <div class="flex" style="font-size: 0">
+                        <a class="sound-gong">特效一</a>
+                        <a class="sound-gong">特效二</a>
+                        <a class="sound-gong">特效三</a>
+                        <a class="sound-gong">特效四</a>
+                        <a class="sound-gong">特效五</a>
+                        <a class="sound-gong">特效六</a>
+                        <a class="sound-gong">特效七</a>
+                        <a class="sound-gong">特效八</a>
+                        <a class="sound-gong">特效五</a>
+                        <a class="sound-gong">特效六</a>
+                        <a class="sound-gong">特效七</a>
+                        <a class="sound-gong">特效八</a>
+                    </div>
+                </div>
+                <div class="sound d-flex">
+                    <p>动画</p>
+                    <div class="flex" style="font-size: 0">
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+                        <a class="animation rel">
+                            <img src="images/direct-one-01.png" class="vzan-logo">
+                            <div class="abs small-animation">
+                                <img src="images/direct-smal-img-01.jpg" class="small-animation-top">
+                                <p class="f-16px co99">乌鸦飞过</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+    <div class="bg-layer">
+        <div class="bg-layer-ceng"></div>
+        <div class="subtitle-two clearfix subtitle-height" style="top: -100px">
+            <div class="drag co99 f-18px clearfix" style="padding:0;">
+                <a class="set-base set-base-active">基本设置</a>
+                <a class="set-base" style="margin-left: -6px">输出设置</a>
+                <a class="add-sedding fr close-set ">
+                    <img src="images/close-end.png" class="close-end2" style="vertical-align: -2px">
+                </a>
+            </div>
+            <div class="subtitle-content-two">
+                <p class="f-16px" style="margin-bottom: 25px">视频设置</p>
+                <div class="padd-bottom f-16px">
+                    <span class="sub-zi">分辨率</span>
+                    <select class="select-long" style="width: 400px;margin-left: 12px; ">
+                        <option class="option">宽屏模式 1280x720</option>
+                        <option>宽屏模式 1366x640</option>
+                        <option>宽屏模式 1280x720</option>
+                        <option>宽屏模式 1366x640</option>
+                    </select>
+                </div>
+                <div class="padd-bottom f-16px">
+                    <span  class="sub-zi">码率</span>
+                    <select class="select-long" style="width: 400px;margin-left: 12px; ">
+                        <option class="option">2500k</option>
+                        <option>2500k</option>
+                        <option>2000k</option>
+                        <option>500k</option>
+                    </select>
+                </div>
+                <p class="f-16px video-dashed">视频设置</p>
+                <div class="padd-bottom f-16px">
+                    <span  class="sub-zi">码率</span>
+                    <select class="select-long" style="width: 400px;margin-left: 12px; ">
+                        <option class="option">25k</option>
+                        <option>20k</option>
+                        <option>15k</option>
+                        <option>10k</option>
+                    </select>
+                </div>
+            </div>
+            <div class="subtitle-content-two" style="display: none">
+                <p class="f-16px" style="margin-bottom: 25px">账号密码登入</p>
+                <div class="f-16px" style="padding-bottom: 24px">
+                    <span class="sub-zi" style="width: 95px">账号</span>
+                    <input type="text" class="select-long input-text" placeholder="请输入账号"/>
+                </div>
+                <div class="f-16px" style="padding-bottom: 20px">
+                    <span  class="sub-zi" style="width: 95px">密码</span>
+                    <input type="text" class="select-long input-text" placeholder="请输入密码"/>
+                    <a class="button-sub">验证</a>
+                </div>
+                <div class="f-14px co33" style="padding:0 0 24px 112px">
+                    <a class="unchecked"></a>记住密码
+                </div>
+                <div class="f-16px" style="padding-bottom: 24px">
+                    <span class="sub-zi" style="width: 95px">直播频道</span>
+                    <select class="select-long" style="width: 360px;margin-left: 12px;">
+                        <option class="option">24k</option>
+                        <option>20k</option>
+                        <option>15k</option>
+                        <option>10k</option>
+                    </select>
+                </div>
+                <div class="f-16px" style="padding-bottom: 20px">
+                    <span  class="sub-zi" style="width: 95px">子频道</span>
+                    <select class="select-long" style="width: 360px;margin-left: 12px;">
+                        <option class="option">24k</option>
+                        <option>20k</option>
+                        <option>15k</option>
+                        <option>10k</option>
+                    </select>
+                    <a class="button-sub">选择</a>
+                </div>
+                <div class="f-14px co33" style="padding:0 0 24px 112px">
+                    <a class="unchecked checked"></a>开播弹窗上推荐
+                </div>
+            </div>
+            <div class="fr" style="font-size: 0;margin-right: 30px">
+                <a class="subtitle-button bg-zi1">
+                    取消
+                </a>
+                <a class="subtitle-button bg-zi2">
+                    确定
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-layer1">
+        <div class="bg-layer-ceng"></div>
+    <div class="subtitle-two clearfix subtitle-height subtitle-base2" >
+        <div class="drag co99 f-18px clearfix" style="padding:0;">
+            <a class="set-base set-base-active">视频文件</a>
+            <a class="set-base" style="margin-left: -6px">RTMP流</a>
+            <a class="add-sedding fr close-up">
+                <img src="images/close-end.png" class="close-end2" style="vertical-align: -2px">
+            </a>
+        </div>
+        <div class="subtitle-content-two video">
+            <p class="f-16px co33 bottom-line">请联系视频源提供商，如果需要添加拉流IP白名单，请联系微赞客服索取。</p>
+            <div class="small-roll">
+                <div class="small-seeding fl small-seeding-mar">
+                    <div class="rel bg-color border-seeding">
+                        <div class="add">
+                            <img src="images/direct-smal-img-02.jpg" class="small-seeding-img">
+                            <a class="add-img-small"><img src="images/director-03.png"></a>
+                            <a class="drag-seeding-small-close" style="padding: 9px"><img src="images/close-end.png" width="12"></a>
+                        </div>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <span class="f-16px co99" style="height: 25px;line-height: 25px">微赞直播</span>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl small-seeding-mar">
+                    <div class="rel bg-color border-seeding">
+                        <div class="add">
+                            <img src="images/direct-smal-img-02.jpg" class="small-seeding-img">
+                            <a class="add-img-small"><img src="images/director-03.png"></a>
+                            <a class="drag-seeding-small-close" style="padding: 9px"><img src="images/close-end.png" width="12"></a>
+                        </div>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <span class="f-16px co99" style="height: 25px;line-height: 25px">微赞直播</span>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl small-seeding-mar">
+                    <div class="rel bg-color border-seeding">
+                        <div class="add">
+                            <a class="add-img-small add-img-small-in"><img src="images/director-06.png"></a>
+                        </div>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <span class="f-16px co99" style="height: 25px;line-height: 25px">微赞直播</span>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitle-content-two video" style="display: none">
+            <p class="f-16px co33 bottom-line">请联系视频源提供商，如果需要添加拉流IP白名单，请联系微赞客服索取。</p>
+            <div class="small-roll">
+                <div class="small-seeding fl small-seeding-mar">
+                    <div class="rel bg-color border-seeding">
+                        <div class="add">
+                            <img src="images/direct-smal-img-02.jpg" class="small-seeding-img">
+                            <a class="add-img-small"><img src="images/director-03.png"></a>
+                            <a class="drag-seeding-small-close" style="padding: 9px"><img src="images/close-end.png" width="12"></a>
+                        </div>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <span class="f-16px co99" style="height: 25px;line-height: 25px">微赞直播</span>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="small-seeding fl small-seeding-mar">
+                    <div class="rel bg-color border-seeding">
+                        <div class="add">
+                            <a class="add-img-small add-img-small-in"><img src="images/director-06.png"></a>
+                        </div>
+                    </div>
+                    <div class="small-setup clearfix">
+                        <span class="f-16px co99" style="height: 25px;line-height: 25px">微赞直播</span>
+                        <a class="fr line-v1">
+                            <img src="images/director-13.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr" style="font-size: 0;margin-right: 30px">
+            <a class="subtitle-button bg-zi1">
+                取消
+            </a>
+            <a class="subtitle-button bg-zi2">
+                确定
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="subtitle-video1" style="display: none">
+        <div class="bg-layer-top"></div>
+        <div class="subtitle clearfix" style="z-index: 22;">
+            <div class="drag co99 f-18px clearfix">
+                <span>网络视频流</span>
+                <a class="add-sedding fr close-video">
+                    <img src="images/close-end.png" class="close-end">
+                </a>
+            </div>
+            <div class="subtitle-content" style="padding: 30px 0 28px 19px;">
+                <div class="f-16px" style="padding-bottom: 24px">
+                    <span class="sub-zi" style="width: 78px">RTMP地址</span>
+                    <input type="text" class="select-long input-text" placeholder="请输入RTMP地址" style="width: 664px"/>
+                </div>
+                <div class="f-16px" style="padding-bottom: 208px">
+                    <span  class="sub-zi" style="width: 78px">名称</span>
+                    <input type="text" class="select-long input-text" placeholder="请输入源备注名称" style="width: 664px"/>
+                </div>
+
+                <div class="fr" style="font-size: 0;margin-right: 30px">
+                    <a class="subtitle-button bg-zi1">
+                        取消
+                    </a>
+                    <a class="subtitle-button bg-zi2">
+                        确定
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="subtitle-zi" style="display: none">
+        <div class="bg-layer-ceng"></div>
+        <div class="subtitle clearfix">
+            <div class="drag co99 f-18px clearfix">
+                <span>字幕</span>
+                <a class="add-sedding fr close-zi">
+                    <img src="images/close-end.png" class="close-end">
+                </a>
+            </div>
+            <div class="subtitle-content">
+                <select class="select-long">
+                    <option class="option">宋体</option>
+                    <option>微软雅黑</option>
+                    <option>楷体</option>
+                </select>
+                <select class="select-long" style="width: 80px">
+                    <option class="option">32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                </select>
+                <input type="color" class="input-color"/>
+                <textarea class="text-input">微赞直播微赞直播间</textarea>
+                <div class="fr">
+                    <a class="subtitle-button bg-zi1">
+                        取消
+                    </a>
+                    <a class="subtitle-button bg-zi2">
+                        确定
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
